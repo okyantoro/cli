@@ -15,11 +15,11 @@ pipelines
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g pipelines
+$ npm install -g @heroku-cli/plugin-pipelines
 $ oclif-example COMMAND
 running command...
 $ oclif-example (-v|--version|version)
-pipelines/0.0.0 darwin-x64 node-v10.15.3
+@heroku-cli/plugin-pipelines/0.0.0 darwin-x64 node-v10.15.3
 $ oclif-example --help [COMMAND]
 USAGE
   $ oclif-example COMMAND
@@ -29,6 +29,7 @@ USAGE
 # Commands
 <!-- commands -->
 * [`oclif-example hello [FILE]`](#oclif-example-hello-file)
+* [`oclif-example pipelines [FILE]`](#oclif-example-pipelines-file)
 
 ## `oclif-example hello [FILE]`
 
@@ -49,4 +50,20 @@ EXAMPLE
 ```
 
 _See code: [src/commands/hello.ts](https://github.com/chadian/pipelines/blob/v0.0.0/src/commands/hello.ts)_
+
+## `oclif-example pipelines [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ oclif-example pipelines [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/pipelines/index.ts](https://github.com/chadian/pipelines/blob/v0.0.0/src/commands/pipelines/index.ts)_
 <!-- commandsstop -->
