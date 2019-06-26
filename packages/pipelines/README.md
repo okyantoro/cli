@@ -16,54 +16,54 @@ pipelines
 <!-- usage -->
 ```sh-session
 $ npm install -g @heroku-cli/plugin-pipelines
-$ oclif-example COMMAND
+$ heroku COMMAND
 running command...
-$ oclif-example (-v|--version|version)
+$ heroku (-v|--version|version)
 @heroku-cli/plugin-pipelines/0.0.0 darwin-x64 node-v10.15.3
-$ oclif-example --help [COMMAND]
+$ heroku --help [COMMAND]
 USAGE
-  $ oclif-example COMMAND
+  $ heroku COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`oclif-example hello [FILE]`](#oclif-example-hello-file)
-* [`oclif-example pipelines [FILE]`](#oclif-example-pipelines-file)
+* [`heroku pipelines`](#heroku-pipelines)
+* [`heroku pipelines:add [FILE]`](#heroku-pipelinesadd-file)
 
-## `oclif-example hello [FILE]`
+## `heroku pipelines`
 
-describe the command here
+list pipelines you have access to
 
 ```
 USAGE
-  $ oclif-example hello [FILE]
+  $ heroku pipelines
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  --json  output in json format
 
 EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
-```
-
-_See code: [src/commands/hello.ts](https://github.com/chadian/pipelines/blob/v0.0.0/src/commands/hello.ts)_
-
-## `oclif-example pipelines [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ oclif-example pipelines [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  $ heroku pipelines
+  === My Pipelines
+  example
+  sushi
 ```
 
 _See code: [src/commands/pipelines/index.ts](https://github.com/chadian/pipelines/blob/v0.0.0/src/commands/pipelines/index.ts)_
+
+## `heroku pipelines:add [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ heroku pipelines:add [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/pipelines/add.ts](https://github.com/chadian/pipelines/blob/v0.0.0/src/commands/pipelines/add.ts)_
 <!-- commandsstop -->

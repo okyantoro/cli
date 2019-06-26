@@ -5,12 +5,15 @@
   "author": "Heroku Developer Experience team",
   "bugs": "https://github.com/heroku/cli/issues",
   "dependencies": {
+    "@heroku-cli/color": "^1.1.14",
     "@heroku-cli/command": "^8.2.11",
     "@heroku-cli/schema": "^1.0.25",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "cli-ux": "^5.2.1",
-    "tslib": "^1"
+    "inquirer": "^6.3.1",
+    "tslib": "^1",
+    "validator": "^10.11.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1",
